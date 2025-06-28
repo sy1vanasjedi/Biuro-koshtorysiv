@@ -226,3 +226,52 @@ select {
 }
 
 /*Our services*/
+.our-services-wrapper {
+  background-image: url("../images/our-services-bg.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.our-services__list {
+  list-style: none;
+  position: relative;
+  z-index: 5;
+}
+
+.our-services__listitem {
+  margin-top: 20px;
+}
+
+.our-services__service-wrapper {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 18px;
+  max-width: 274px;
+  background-color: #ffffff;
+}
+
+.our-services__number {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #2a2a2a;
+  letter-spacing: -1.6px;
+}
+
+.our-services__title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #2a2a2a;
+  letter-spacing: -1.6px;
+}
+
+.our-services__text {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2a2a2a;
+}
