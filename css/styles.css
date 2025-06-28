@@ -1,0 +1,228 @@
+/* ZERO STYLES */
+/* Specify box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove internal indents */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove the outer margins */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set the basic default settings for the body */
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  background-color: #ffffff;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Elements a, which do not have a class, are reset to default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Simplify work with images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Specify an understandable periodicity in the data flow of the article */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*Styles*/
+/*Global*/
+.header-hero-wrapper {
+  background-image: url("../images/header-hero-wrapper-bg.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*min-height: 790px;*/
+  min-height: 900px;
+  position: relative;
+  z-index: 1;
+}
+
+.bg-part-woman {
+  position: absolute;
+  right: 12%;
+  top: 5%;
+  width: 486px;
+  height: 729px;
+  background-image: url("../images/woman-bg.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.bg-part-black-yellow-line {
+  position: absolute;
+  bottom: 6%;
+  width: 100%;
+  height: 160px;
+  background-image: url("../images/black-yellow-line.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
+}
+
+.bg-part-blure-line {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 144px;
+  background-image: url("../images/blure-bg.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+.invisible-block {
+  height: 450px;
+}
+
+.main-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #2a2a2a;
+  letter-spacing: -1.6px;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.secondary-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #2a2a2a;
+  letter-spacing: -1.6px;
+}
+
+/*Header*/
+.header .navbar {
+  background-color: transparent !important;
+  z-index: 10;
+}
+
+.header .nav-link {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2a2a2a !important;
+  letter-spacing: -0.15px;
+}
+
+.header__btn {
+  padding: 8px 25px;
+  background-color: #ffd836;
+  border-radius: 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2a2a2a;
+  letter-spacing: -0.15px;
+}
+
+.header__btn:hover {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
+/*Hero*/
+.hero__title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 73px;
+  color: #2a2a2a;
+  letter-spacing: -2.95px;
+}
+
+.hero__text {
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #2a2a2a;
+  letter-spacing: -0.95px;
+}
+
+.hero__btn {
+  display: inline-block;
+  padding: 15px;
+  background-color: #ffd836;
+  border-radius: 17px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2a2a2a;
+  letter-spacing: -0.15px;
+}
+
+.hero__btn:hover {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
+/*About us*/
+.about-us {
+  position: relative;
+}
+
+.about-us__block {
+  padding: 50px 100px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  position: absolute;
+  top: -142px;
+  z-index: 5;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.about-us__text,
+.about-us__listitem {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+
+/*Our services*/
