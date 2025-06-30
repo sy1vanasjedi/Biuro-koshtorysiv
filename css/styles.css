@@ -231,7 +231,6 @@ select {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: 1;
 }
 
 .our-services__list {
@@ -274,11 +273,6 @@ select {
   font-size: 16px;
   color: #2a2a2a;
 }
-
-/*our team*/
-/*.slider-wrapper {
-  position: relative;
-}*/
 
 .our-team__title {
   font-family: Montserrat, sans-serif;
@@ -334,4 +328,69 @@ select {
 
 .our-team__info .slick-next:hover {
   background-color: #FFE898;
+}
+
+/*Contact us*/
+.contact-us-wrapper {
+  background-image: url("../images/contact-us-bg.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 496px;
+}
+
+.contact-us,
+.contact-us > .row {
+  min-height: 496px;
+}
+
+.contact-us .main-title {
+  border-bottom: none;
+}
+
+.contact-us__text {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #000000;
+}
+
+.contact-us input {
+  height: 50px;
+}
+
+.contact-us__btn {
+  background-color: #ffd836;
+  height: 50px;
+  padding: 0 50px;
+  border: none;
+  border-radius: 6px;
+}
+
+/*Footer*/
+.footer-wrapper {
+  border-top: 2px solid #d9d9d9;
+}
+
+.footer__title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
+}
+
+.footer__text,
+.footer__link {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #999999;
+  letter-spacing: -0.15px;
+}
+
+.footer__bluetext {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #43a6fd;
 }
