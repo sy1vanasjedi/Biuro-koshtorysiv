@@ -73,7 +73,6 @@ select {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  /*min-height: 790px;*/
   min-height: 900px;
   position: relative;
   z-index: 1;
@@ -81,7 +80,7 @@ select {
 
 .bg-part-woman {
   position: absolute;
-  right: 12%;
+  right: 0;
   top: 5%;
   width: 486px;
   height: 729px;
