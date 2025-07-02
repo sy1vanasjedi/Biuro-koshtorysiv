@@ -154,7 +154,7 @@ select {
   padding: 8px 25px;
   background-color: #ffd836;
   border-radius: 20px;
-  font-family: Roboto, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: #2a2a2a;
@@ -356,7 +356,33 @@ select {
 }
 
 .contact-us input {
-  height: 50px;
+  padding: 24px 54px;
+  border: none;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+}
+
+.contact-us__telephone,
+.contact-us__name {
+  position: relative;
+}
+
+.contact-us__telephone::before,
+.contact-us__name::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-us__telephone::before {
+  content: url("../images/icons/telephone-icon.svg");
+}
+
+.contact-us__name::before {
+  content: url("../images/icons/client-icon.svg");
 }
 
 .contact-us__btn {
