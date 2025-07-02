@@ -31,10 +31,13 @@ dd {
 }
 
 /* Set the basic default settings for the body */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 320px;
   min-height: 100vh;
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   background-color: #ffffff;
   background-position: 0 0;
