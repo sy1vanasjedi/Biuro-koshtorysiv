@@ -1,3 +1,5 @@
+//Sliders
+//Our team slider
 $(document).ready(function(){
   $('.our-team__slider').slick({
     slidesToShow: 3,
@@ -6,3 +8,7 @@ $(document).ready(function(){
     appendArrows: $('.our-team__info'),
   });
 });
+
+//Functions
+
+//Call functions
