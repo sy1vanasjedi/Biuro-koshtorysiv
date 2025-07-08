@@ -145,12 +145,24 @@ select {
   z-index: 10;
 }
 
+.header .nav-item {
+  margin: 0 5px;
+}
+
 .header .nav-link {
   font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 16px;
   color: #2a2a2a !important;
   letter-spacing: -0.15px;
+  border: 2px solid transparent;
+  transition: all .1s;
+}
+
+.header .nav-link:hover {
+  border: 2px solid #ffd836;
+  transform: scale(1.03);
+  transition: all .1s;
 }
 
 .header__btn {
