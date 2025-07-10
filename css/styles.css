@@ -94,6 +94,19 @@ select {
   z-index: 1;
 }
 
+/*.mb-bg-part-woman {*/
+/*  position: absolute;*/
+/*  right: 0;*/
+/*  top: 5%;*/
+/*  width: 486px;*/
+/*  height: 729px;*/
+/*  background-image: url("../images/woman-mb-bg.png");*/
+/*  background-position: 0 0;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: cover;*/
+/*  z-index: 1;*/
+/*}*/
+
 .bg-part-black-yellow-line {
   position: absolute;
   bottom: 6%;
@@ -140,16 +153,31 @@ select {
 }
 
 /*Header*/
-.header .navbar {
-  background-color: transparent !important;
-  z-index: 10;
+.header {
+  position: relative;
+  z-index: 100;
 }
 
-.header .nav-item {
+.header__navbar {
+  /*position: relative;*/
+  width: 100%;
+  background-color: transparent;
+}
+
+.header__navbar .menu {
+  display: flex;
+  width: 100%;
+}
+
+.header__navbar .menu__list {
+  list-style: none;
+}
+
+.header__navbar .menu__item {
   margin: 0 5px;
 }
 
-.header .nav-link {
+.header__navbar .menu__link {
   font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -157,12 +185,15 @@ select {
   letter-spacing: -0.15px;
   border: 2px solid transparent;
   transition: all .1s;
+  padding: 5px;
+  display: block;
 }
 
-.header .nav-link:hover {
+.header__navbar .menu__link:hover {
   border: 2px solid #ffd836;
   transform: scale(1.03);
   transition: all .1s;
+  text-decoration: none;
 }
 
 .header__btn {
@@ -434,4 +465,165 @@ select {
   font-weight: 700;
   font-size: 16px;
   color: #43a6fd;
+}
+
+@media (max-width: 1200px) {
+  .header-hero-wrapper {
+    background-position: -100px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-hero-wrapper {
+    background-position: -180px 0;
+  }
+
+  .bg-part-woman {
+    right: -35px;
+  }
+
+  .header__navbar {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .header__navbar::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(253, 209, 43, 0.6);
+    filter: blur(1px);
+    z-index: -1;
+    border-radius: 14px;
+  }
+
+  .header__navbar .menu {
+    position: absolute;
+    display: none;
+    background-color: rgb(42, 42, 42, 0.9);
+    padding: 30px;
+    top: 90px;
+    border-radius: 14px;
+  }
+
+  .header__navbar .menu.active {
+    display: flex;
+  }
+
+  .header__navbar .menu__link {
+    color: #999999 !important;
+  }
+
+  .menu__link.menu__link-telephone {
+    display: inline-block;
+    background-color: #ffd836;
+    color: #2a2a2a !important;
+    border-radius: 6px;
+  }
+
+  .burger-menu {
+    display: block;
+    border: none;
+    width: 38px;
+    height: 30px;
+    background-color: transparent;
+  }
+
+  .burger-menu span {
+    position: relative;
+    left: 0;
+    display: block;
+    width: 38px;
+    height: 4px;
+    background-color: #2a2a2a;
+    border-radius: 1.69px;
+  }
+
+  .burger-menu span::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2a2a2a;
+    border-radius: 1.69px;
+  }
+
+  .burger-menu span::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2a2a2a;
+    border-radius: 1.69px;
+  }
+
+  .hero__title {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-hero-wrapper {
+    min-height: 600px;
+    background-position: -100px 0;
+  }
+
+  .bg-part-woman {
+    right: 0;
+    top: 80px;
+    width: 280px;
+    height: 400px;
+  }
+
+  .hero__title {
+    font-size: 35px;
+  }
+
+  .hero__text {
+    font-size: 20px;
+  }
+
+  .about-us__block {
+    padding: 10px;
+    position: static;
+    background-color: #ffffff;
+  }
+
+  .bg-part-black-yellow-line {
+    bottom: -8%;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-hero-wrapper {
+    background-position: -155px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero__btn {
+    padding: 10px;
+    border-radius: 0;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 460px) {
+  .hero {
+    background-color: rgb(255, 255, 255, .8);
+    padding: 10px;
+    position: relative;
+    border-radius: 18px;
+  }
+
+  .bg-part-woman {
+    z-index: 0;
+  }
 }

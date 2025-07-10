@@ -10,5 +10,15 @@ $(document).ready(function(){
 });
 
 //Functions
+//Open burger menu
+function openBurgerMenu() {
+  const burgerBtn = document.querySelector('.burger-menu');
+  const menu = document.querySelector('.menu');
+
+  burgerBtn.addEventListener("click", function () {
+    menu.classList.toggle('active');
+  })
+}
 
 //Call functions
+openBurgerMenu();

@@ -24,35 +24,42 @@
         </div>
       </div>
       <div class="bg-part-black-yellow-line"></div>
-      <div class="bg-part-blure-line"></div>
+      <div class="bg-part-blure-line d-none d-md-block"></div>
       <div class="container">
         <header class="header">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light px-0">
-            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo-icon"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+          <nav class="header__navbar d-flex justify-content-between justify-content-lg-start align-items-center">
+            <a class="header__brand" href="#"><img src="images/logo.svg" alt="logo-icon"></a>
+            <button class="burger-menu d-lg-none p-0 mr-2" type="button">
+              <span class="burger-menu__line"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#about-us">Про компанію</a>
+            <div class="menu flex-column flex-lg-row justify-content-between align-item-start align-item-lg-center ml-lg-3">
+              <ul class="menu__list d-flex flex-column flex-lg-row">
+                <li class="menu__item mx-2 d-lg-none">
+                  <a class="menu__link menu__link-telephone" href="#">+38 (099) 316-69-78</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#our-services">Послуги</a>
+                <li class="menu__item d-flex mt-2 d-lg-none">
+                  <a class="menu__link menu__link-social" href="#"><img src="images/icons/telegram.svg" alt="social-icon"></a>
+                  <a class="menu__link menu__link-social" href="#"><img src="images/icons/viber.svg" alt="social-icon"></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#our-team">Команда</a>
+                <li class="menu__item mx-2 mt-2 mt-lg-0">
+                  <a class="menu__link" href="#about-us">Про компанію</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact-us">Контакти</a>
+                <li class="menu__item mx-2">
+                  <a class="menu__link" href="#our-services">Послуги</a>
+                </li>
+                <li class="menu__item mx-2">
+                  <a class="menu__link" href="#our-team">Команда</a>
+                </li>
+                <li class="menu__item mx-2">
+                  <a class="menu__link" href="#contact-us">Контакти</a>
                 </li>
               </ul>
-              <a class="header__btn d-flex justify-content-center align-items-center" href="#contact-us">Зв'язатися</a>
+              <a class="header__btn d-none d-lg-flex justify-content-center align-items-center" href="#contact-us">Зв'язатися</a>
             </div>
           </nav>
         </header>
 
-        <section class="hero mt-5">
+        <section class="hero mt-5 pl-lg-5">
           <div class="row">
             <div class="col-6">
               <h1 class="hero__title">БЮРО<br> КОШТОРИСІВ</h1>
@@ -93,205 +100,205 @@
     </div>
 
     <!--Invisible block-->
-    <div class="invisible-block"></div>
+    <div class="invisible-block d-none d-md-block"></div>
 
-    <div class="container">
-      <h2 class="main-title pb-4 mt-4" id="our-services">Наші послуги</h2>
-    </div>
+<!--    <div class="container">-->
+<!--      <h2 class="main-title pb-4 mt-4" id="our-services">Наші послуги</h2>-->
+<!--    </div>-->
 
-    <div class="our-services-wrapper mt-4 pb-5">
-      <div class="bg-part-blure-line"></div>
-      <div class="container">
-        <section class="our-services">
-          <ul class="row our-services__list">
-            <li class="col-4 d-flex justify-content-center our-services__listitem">
-              <div class="our-services__service-wrapper">
-                <span class="our-services__number">01</span>
-                <img src="images/services/service01.svg" alt="service-icon" class="our-services__img mt-2">
-                <h4 class="our-services__title mt-2">Кошторис</h4>
-                <p class="our-services__text mt-2">Розробляємо інвесторську кошторисну документацію для всіх розділів проєкту.</p>
-              </div>
-            </li>
-            <li class="col-4 d-flex justify-content-center our-services__listitem">
-              <div class="our-services__service-wrapper">
-                <span class="our-services__number">02</span>
-                <img src="images/services/service02.svg" alt="service-icon" class="our-services__img mt-2">
-                <h4 class="our-services__title mt-2">Угода</h4>
-                <p class="our-services__text mt-2">Готуємо договірну ціну до підряду: за технічним завданням або дефектним актом.</p>
-              </div>
-            </li>
-            <li class="col-4 d-flex justify-content-center our-services__listitem">
-              <div class="our-services__service-wrapper">
-                <span class="our-services__number">03</span>
-                <img src="images/services/service03.svg" alt="service-icon" class="our-services__img mt-2">
-                <h4 class="our-services__title mt-2">Перевірка</h4>
-                <p class="our-services__text mt-2">Аналізуємо кошториси, виявляємо помилки, допомагаємо пройти експертизу.</p>
-              </div>
-            </li>
-            <li class="col-4 d-flex justify-content-center our-services__listitem">
-              <div class="our-services__service-wrapper">
-                <span class="our-services__number">04</span>
-                <img src="images/services/service04.svg" alt="service-icon" class="our-services__img mt-2">
-                <h4 class="our-services__title mt-2">Супровід</h4>
-                <p class="our-services__text mt-2">Контролюємо виконання будівельних робіт згідно проєктної документації.</p>
-              </div>
-            </li>
-            <li class="col-4 d-flex justify-content-center our-services__listitem">
-              <div class="our-services__service-wrapper">
-                <span class="our-services__number">05</span>
-                <img src="images/services/service05.svg" alt="service-icon" class="our-services__img mt-2">
-                <h4 class="our-services__title mt-2">Комерція</h4>
-                <p class="our-services__text mt-2">Складаємо кошториси для комерційних пропозицій з точним прорахунком витрат.</p>
-              </div>
-            </li>
-            <li class="col-4 d-flex justify-content-center our-services__listitem">
-              <div class="our-services__service-wrapper">
-                <span class="our-services__number">06</span>
-                <img src="images/services/service06.svg" alt="service-icon" class="our-services__img mt-2">
-                <h4 class="our-services__title mt-2">Графік</h4>
-                <p class="our-services__text mt-2">Формуємо реалістичні графіки виконання робіт для підрядників та замовників.</p>
-              </div>
-            </li>
-            <li class="col-4 d-flex justify-content-center our-services__listitem">
-              <div class="our-services__service-wrapper">
-                <span class="our-services__number">07</span>
-                <img src="images/services/service07.svg" alt="service-icon" class="our-services__img mt-2">
-                <h4 class="our-services__title mt-2">Економія</h4>
-                <p class="our-services__text mt-2">Аналізуємо витрати, оптимізуємо бюджети, радимо, де можна зекономити.</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </div>
+<!--    <div class="our-services-wrapper mt-4 pb-5">-->
+<!--      <div class="bg-part-blure-line"></div>-->
+<!--      <div class="container">-->
+<!--        <section class="our-services">-->
+<!--          <ul class="row our-services__list">-->
+<!--            <li class="col-4 d-flex justify-content-center our-services__listitem">-->
+<!--              <div class="our-services__service-wrapper">-->
+<!--                <span class="our-services__number">01</span>-->
+<!--                <img src="images/services/service01.svg" alt="service-icon" class="our-services__img mt-2">-->
+<!--                <h4 class="our-services__title mt-2">Кошторис</h4>-->
+<!--                <p class="our-services__text mt-2">Розробляємо інвесторську кошторисну документацію для всіх розділів проєкту.</p>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="col-4 d-flex justify-content-center our-services__listitem">-->
+<!--              <div class="our-services__service-wrapper">-->
+<!--                <span class="our-services__number">02</span>-->
+<!--                <img src="images/services/service02.svg" alt="service-icon" class="our-services__img mt-2">-->
+<!--                <h4 class="our-services__title mt-2">Угода</h4>-->
+<!--                <p class="our-services__text mt-2">Готуємо договірну ціну до підряду: за технічним завданням або дефектним актом.</p>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="col-4 d-flex justify-content-center our-services__listitem">-->
+<!--              <div class="our-services__service-wrapper">-->
+<!--                <span class="our-services__number">03</span>-->
+<!--                <img src="images/services/service03.svg" alt="service-icon" class="our-services__img mt-2">-->
+<!--                <h4 class="our-services__title mt-2">Перевірка</h4>-->
+<!--                <p class="our-services__text mt-2">Аналізуємо кошториси, виявляємо помилки, допомагаємо пройти експертизу.</p>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="col-4 d-flex justify-content-center our-services__listitem">-->
+<!--              <div class="our-services__service-wrapper">-->
+<!--                <span class="our-services__number">04</span>-->
+<!--                <img src="images/services/service04.svg" alt="service-icon" class="our-services__img mt-2">-->
+<!--                <h4 class="our-services__title mt-2">Супровід</h4>-->
+<!--                <p class="our-services__text mt-2">Контролюємо виконання будівельних робіт згідно проєктної документації.</p>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="col-4 d-flex justify-content-center our-services__listitem">-->
+<!--              <div class="our-services__service-wrapper">-->
+<!--                <span class="our-services__number">05</span>-->
+<!--                <img src="images/services/service05.svg" alt="service-icon" class="our-services__img mt-2">-->
+<!--                <h4 class="our-services__title mt-2">Комерція</h4>-->
+<!--                <p class="our-services__text mt-2">Складаємо кошториси для комерційних пропозицій з точним прорахунком витрат.</p>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="col-4 d-flex justify-content-center our-services__listitem">-->
+<!--              <div class="our-services__service-wrapper">-->
+<!--                <span class="our-services__number">06</span>-->
+<!--                <img src="images/services/service06.svg" alt="service-icon" class="our-services__img mt-2">-->
+<!--                <h4 class="our-services__title mt-2">Графік</h4>-->
+<!--                <p class="our-services__text mt-2">Формуємо реалістичні графіки виконання робіт для підрядників та замовників.</p>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="col-4 d-flex justify-content-center our-services__listitem">-->
+<!--              <div class="our-services__service-wrapper">-->
+<!--                <span class="our-services__number">07</span>-->
+<!--                <img src="images/services/service07.svg" alt="service-icon" class="our-services__img mt-2">-->
+<!--                <h4 class="our-services__title mt-2">Економія</h4>-->
+<!--                <p class="our-services__text mt-2">Аналізуємо витрати, оптимізуємо бюджети, радимо, де можна зекономити.</p>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </section>-->
+<!--      </div>-->
+<!--    </div>-->
 
-    <div class="our-team-wrapper mb-5">
-      <div class="container">
-        <section class="our-team" id="our-team">
-          <h2 class="main-title pb-4">Наша команда</h2>
-          <div class="row slider-wrapper d-flex mt-5">
-            <div class="col-3 pr-0 our-team__info d-flex flex-column justify-content-between">
-              <div>
-                <h3 class="our-team__title"><i>“Команда — це наша потужність”</i></h3>
-                <p class="our-team__text mt-4"><strong>Бюро кошторисів</strong> — це кандидати технічних наук, сертифіковані інженери-проєктувальники та досвідчені інженери-будівельники.</p>
-                <p class="our-team__text mt-4"> Ми працюємо як єдиний механізм, де кожен фахівець — частина надійної системи, 
-                що забезпечує точність, швидкість і відповідальність 
-                у реалізації проєктів.</p>
-              </div>
-            </div>
-            <div class="col-9">
-              <div class="our-team__slider">
-                <div class="our-team__slide">
-                  <div class="employee d-flex flex-column px-2">
-                    <span class="employee__name">Оксана Машій</span>
-                    <span class="employee__position">Головний кошторисник</span>
-                    <span class="employee__experience pb-3 mb-3">10 років досвіду</span>
-                    <img class="employee__photo" src="images/employees/employee1.png" alt="employee-photo">
-                  </div>
-                </div>
-                <div class="our-team__slide">
-                  <div class="employee d-flex flex-column px-2">
-                    <span class="employee__name">Ольга Грибів</span>
-                    <span class="employee__position">Інженер</span>
-                    <span class="employee__experience pb-3 mb-3">15 років досвіду</span>
-                    <img class="employee__photo" src="images/employees/employee2.png" alt="employee-photo">
-                  </div>
-                </div>
-                <div class="our-team__slide">
-                  <div class="employee d-flex flex-column px-2">
-                    <span class="employee__name">Катерина Колосенко</span>
-                    <span class="employee__position">Інженер</span>
-                    <span class="employee__experience pb-3 mb-3">7 років досвіду</span>
-                    <img class="employee__photo" src="images/employees/employee3.png" alt="employee-photo">
-                  </div>
-                </div>
-                <div class="our-team__slide">
-                  <div class="employee d-flex flex-column px-2">
-                    <span class="employee__name">Оксана Машій</span>
-                    <span class="employee__position">Головний кошторисник</span>
-                    <span class="employee__experience pb-3 mb-3">10 років досвіду</span>
-                    <img class="employee__photo" src="images/employees/employee1.png" alt="employee-photo">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
+<!--    <div class="our-team-wrapper mb-5">-->
+<!--      <div class="container">-->
+<!--        <section class="our-team" id="our-team">-->
+<!--          <h2 class="main-title pb-4">Наша команда</h2>-->
+<!--          <div class="row slider-wrapper d-flex mt-5">-->
+<!--            <div class="col-3 pr-0 our-team__info d-flex flex-column justify-content-between">-->
+<!--              <div>-->
+<!--                <h3 class="our-team__title"><i>“Команда — це наша потужність”</i></h3>-->
+<!--                <p class="our-team__text mt-4"><strong>Бюро кошторисів</strong> — це кандидати технічних наук, сертифіковані інженери-проєктувальники та досвідчені інженери-будівельники.</p>-->
+<!--                <p class="our-team__text mt-4"> Ми працюємо як єдиний механізм, де кожен фахівець — частина надійної системи, -->
+<!--                що забезпечує точність, швидкість і відповідальність -->
+<!--                у реалізації проєктів.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-9">-->
+<!--              <div class="our-team__slider">-->
+<!--                <div class="our-team__slide">-->
+<!--                  <div class="employee d-flex flex-column px-2">-->
+<!--                    <span class="employee__name">Оксана Машій</span>-->
+<!--                    <span class="employee__position">Головний кошторисник</span>-->
+<!--                    <span class="employee__experience pb-3 mb-3">10 років досвіду</span>-->
+<!--                    <img class="employee__photo" src="images/employees/employee1.png" alt="employee-photo">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="our-team__slide">-->
+<!--                  <div class="employee d-flex flex-column px-2">-->
+<!--                    <span class="employee__name">Ольга Грибів</span>-->
+<!--                    <span class="employee__position">Інженер</span>-->
+<!--                    <span class="employee__experience pb-3 mb-3">15 років досвіду</span>-->
+<!--                    <img class="employee__photo" src="images/employees/employee2.png" alt="employee-photo">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="our-team__slide">-->
+<!--                  <div class="employee d-flex flex-column px-2">-->
+<!--                    <span class="employee__name">Катерина Колосенко</span>-->
+<!--                    <span class="employee__position">Інженер</span>-->
+<!--                    <span class="employee__experience pb-3 mb-3">7 років досвіду</span>-->
+<!--                    <img class="employee__photo" src="images/employees/employee3.png" alt="employee-photo">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="our-team__slide">-->
+<!--                  <div class="employee d-flex flex-column px-2">-->
+<!--                    <span class="employee__name">Оксана Машій</span>-->
+<!--                    <span class="employee__position">Головний кошторисник</span>-->
+<!--                    <span class="employee__experience pb-3 mb-3">10 років досвіду</span>-->
+<!--                    <img class="employee__photo" src="images/employees/employee1.png" alt="employee-photo">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </section>-->
+<!--      </div>-->
+<!--    </div>-->
 
-    <div class="contact-us-wrapper">
-      <div class="container">
-        <div class="contact-us" id="contact-us">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-12">
-              <h2 class="main-title mb-4">Бажаєте прорахувати вартість робіт?</h2>
-              <p class="contact-us__text">Залиште свої контакти — і ми підготуємо для вас кошторис або персональну консультацію.</p>
-              <form class="contact-us__form my-3">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="contact-us__telephone">
-                      <input type="text" class="form-control" placeholder="Телефон">
-                    </div>
-                  </div>
-                  <div class="col-12 mt-3">
-                    <div class="contact-us__name">
-                      <input type="text" class="form-control" placeholder="Ім’я">
-                    </div>
-                  </div>
-                  <div class="col-12 mt-3">
-                    <button class="contact-us__btn" type="submit">Надіслати</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<!--    <div class="contact-us-wrapper">-->
+<!--      <div class="container">-->
+<!--        <div class="contact-us" id="contact-us">-->
+<!--          <div class="row justify-content-center align-items-center">-->
+<!--            <div class="col-12">-->
+<!--              <h2 class="main-title mb-4">Бажаєте прорахувати вартість робіт?</h2>-->
+<!--              <p class="contact-us__text">Залиште свої контакти — і ми підготуємо для вас кошторис або персональну консультацію.</p>-->
+<!--              <form class="contact-us__form my-3">-->
+<!--                <div class="row">-->
+<!--                  <div class="col-12">-->
+<!--                    <div class="contact-us__telephone">-->
+<!--                      <input type="text" class="form-control" placeholder="Телефон">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-12 mt-3">-->
+<!--                    <div class="contact-us__name">-->
+<!--                      <input type="text" class="form-control" placeholder="Ім’я">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-12 mt-3">-->
+<!--                    <button class="contact-us__btn" type="submit">Надіслати</button>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </form>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
-    <footer class="footer mt-5">
-      <div class="container">
-        <div class="footer-wrapper py-5">
-          <div class="row">
-            <div class="col-12">
-              <img src="images/logo.svg" alt="logo-icon">
-            </div>
-            <div class="col-3 d-flex flex-column mt-3">
-              <span class="footer__title">Контактна інформація:</span>
-              <span class="footer__text mt-1">вул. Сумська, буд. , офіс №, м. Харків, Україна</span>
-              <a href="#" class="footer__link mt-1">+38 (099) 316-69-78</a>
-              <a href="#" class="footer__link mt-1">kalmukova27@ukr.net</a>
-              <span class="footer__bluetext mt-1">Валентина Савчук</span>
-            </div>
-            <div class="col-3 d-flex justify-content-end mt-3">
-              <div class="d-flex flex-column">
-                <span class="footer__title">Бюро кошторисів</span>
-                <a href="#" class="footer__link mt-1">Головна</a>
-                <a href="#" class="footer__link mt-1">Послуги</a>
-                <a href="#" class="footer__link mt-1">Контакти</a>
-              </div>
-            </div>
-            <div class="col-3 d-flex justify-content-end mt-3">
-              <div class="d-flex flex-column">
-                <span class="footer__title">Про нас</span>
-                <a href="#" class="footer__link mt-1">Історія</a>
-                <a href="#" class="footer__link mt-1">Команда</a>
-                <a href="#" class="footer__link mt-1">Вакансії</a>
-              </div>
-            </div>
-            <div class="col-3 d-flex justify-content-end mt-3">
-              <div class="d-flex flex-column">
-                <span class="footer__title">Клієнтам</span>
-                <a href="#" class="footer__link mt-1">FAQ</a>
-                <a href="#" class="footer__link mt-1">Документи</a>
-                <a href="#" class="footer__link mt-1">Підтримка</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+<!--    <footer class="footer mt-5">-->
+<!--      <div class="container">-->
+<!--        <div class="footer-wrapper py-5">-->
+<!--          <div class="row">-->
+<!--            <div class="col-12">-->
+<!--              <img src="images/logo.svg" alt="logo-icon">-->
+<!--            </div>-->
+<!--            <div class="col-3 d-flex flex-column mt-3">-->
+<!--              <span class="footer__title">Контактна інформація:</span>-->
+<!--              <span class="footer__text mt-1">вул. Сумська, буд. , офіс №, м. Харків, Україна</span>-->
+<!--              <a href="#" class="footer__link mt-1">+38 (099) 316-69-78</a>-->
+<!--              <a href="#" class="footer__link mt-1">kalmukova27@ukr.net</a>-->
+<!--              <span class="footer__bluetext mt-1">Валентина Савчук</span>-->
+<!--            </div>-->
+<!--            <div class="col-3 d-flex justify-content-end mt-3">-->
+<!--              <div class="d-flex flex-column">-->
+<!--                <span class="footer__title">Бюро кошторисів</span>-->
+<!--                <a href="#" class="footer__link mt-1">Головна</a>-->
+<!--                <a href="#" class="footer__link mt-1">Послуги</a>-->
+<!--                <a href="#" class="footer__link mt-1">Контакти</a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-3 d-flex justify-content-end mt-3">-->
+<!--              <div class="d-flex flex-column">-->
+<!--                <span class="footer__title">Про нас</span>-->
+<!--                <a href="#" class="footer__link mt-1">Історія</a>-->
+<!--                <a href="#" class="footer__link mt-1">Команда</a>-->
+<!--                <a href="#" class="footer__link mt-1">Вакансії</a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-3 d-flex justify-content-end mt-3">-->
+<!--              <div class="d-flex flex-column">-->
+<!--                <span class="footer__title">Клієнтам</span>-->
+<!--                <a href="#" class="footer__link mt-1">FAQ</a>-->
+<!--                <a href="#" class="footer__link mt-1">Документи</a>-->
+<!--                <a href="#" class="footer__link mt-1">Підтримка</a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </footer>-->
   </div>
   
   <!--Bootstrap and jquery JS-->
