@@ -616,6 +616,18 @@ select {
 }
 
 @media (max-width: 460px) {
+  .hero__title {
+    font-size: 23px;
+    letter-spacing: 0;
+  }
+
+  .hero__btn {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 400px) {
   .hero {
     background-color: rgb(255, 255, 255, .8);
     padding: 10px;
