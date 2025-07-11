@@ -631,17 +631,21 @@ body._sending::after,
   .invisible-block {
     display: none;
   }
+
+  .header-hero-wrapper .bg-part-blure-line {
+    display: none !important;
+  }
 }
 
 @media (max-width: 768px) {
   .header-hero-wrapper {
-    min-height: 560px;
+    min-height: 600px;
     background-position: -100px 0;
   }
 
   .bg-part-woman {
     right: 0;
-    top: 80px;
+    top: 120px;
     width: 280px;
     height: 400px;
   }
@@ -751,6 +755,10 @@ body._sending::after,
 }
 
 @media (max-width: 460px) {
+  .header-hero-wrapper {
+    min-height: 545px;
+  }
+
   .hero__title {
     font-size: 23px;
     letter-spacing: 0;
