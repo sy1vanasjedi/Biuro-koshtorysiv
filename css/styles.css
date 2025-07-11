@@ -127,8 +127,9 @@ select {
   font-weight: 600;
   font-size: 40px;
   color: #2a2a2a;
-  letter-spacing: -1.6px;
+  letter-spacing: 0;
   border-bottom: 2px solid #d9d9d9;
+  text-transform: uppercase;
 }
 
 .secondary-title {
@@ -171,7 +172,7 @@ select {
 .header__navbar .menu__link {
   font-family: Montserrat, sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   color: #2a2a2a !important;
   letter-spacing: -0.15px;
   border: 2px solid transparent;
@@ -622,9 +623,15 @@ body._sending::after,
   }
 }
 
+@media (max-width: 769px) {
+  .invisible-block {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .header-hero-wrapper {
-    min-height: 600px;
+    min-height: 560px;
     background-position: -100px 0;
   }
 
@@ -636,7 +643,7 @@ body._sending::after,
   }
 
   .main-title {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .secondary-title {
@@ -659,6 +666,7 @@ body._sending::after,
     padding: 10px;
     position: static;
     background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .bg-part-black-yellow-line {
@@ -686,6 +694,12 @@ body._sending::after,
   .our-team__info .slick-next {
     width: 50px;
     height: 50px;
+  }
+
+  .contact-us,
+  .contact-us-wrapper,
+  .contact-us > .row {
+    min-height: 290px;
   }
 
   .contact-us__text {
@@ -758,8 +772,12 @@ body._sending::after,
 
 @media (max-width: 380px) {
   .header-hero-wrapper {
-    min-height: 545px;
+    min-height: 505px;
     background-position: -230px 0;
+  }
+
+  .bg-part-black-yellow-line {
+    bottom: -10%;
   }
 
   .bg-part-woman {
