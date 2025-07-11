@@ -17,16 +17,27 @@ $(document).ready(function () {
   });
 });
 
+//Variables
+const burgerBtn = document.querySelector('.burger-menu');
+const menu = document.querySelector('.menu');
+const menuItems = document.querySelectorAll('.menu__item');
+
 //Functions
 //Open burger menu
 function openBurgerMenu() {
-  const burgerBtn = document.querySelector('.burger-menu');
-  const menu = document.querySelector('.menu');
-
   burgerBtn.addEventListener("click", function () {
     menu.classList.toggle('active');
   })
 }
 
+function closeMenuOnClick() {
+  menuItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      menu.classList.remove('active');
+    })
+  })
+}
+
 //Call functions
 openBurgerMenu();
+closeMenuOnClick();
