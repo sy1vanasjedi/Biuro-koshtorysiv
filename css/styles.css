@@ -591,6 +591,12 @@ select {
   .secondary-title {
     font-size: 28px;
   }
+
+  .contact-us,
+  .contact-us-wrapper,
+  .contact-us > .row {
+    min-height: 345px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -604,6 +610,18 @@ select {
     top: 80px;
     width: 280px;
     height: 400px;
+  }
+
+  .main-title {
+    font-size: 25px;
+  }
+
+  .secondary-title {
+    font-size: 18px;
+  }
+
+  .about-us__text, .about-us__listitem {
+    font-size: 14px;
   }
 
   .hero__title {
@@ -624,6 +642,14 @@ select {
     bottom: -8%;
   }
 
+  .our-team__title {
+    font-size: 20px;
+  }
+
+  .our-team__text {
+    font-size: 14px;
+  }
+
   .our-team__slider .slick-track {
     display: flex !important;
     align-items: end !important;
@@ -638,6 +664,10 @@ select {
     width: 50px;
     height: 50px;
   }
+
+  .contact-us__text {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -647,6 +677,27 @@ select {
 
   .our-services__service-wrapper {
     max-width: 100%;
+    padding: 10px;
+  }
+
+  .our-services__img {
+    width: 60px;
+  }
+
+  .our-services__number {
+    font-size: 12px;
+  }
+
+  .our-services__title {
+    font-size: 20px;
+  }
+
+  .our-services__text {
+    font-size: 12px;
+  }
+
+  .our-services__listitem {
+    margin-top: 10px;
   }
 }
 
@@ -668,24 +719,43 @@ select {
     position: relative;
     z-index: 10;
   }
-}
 
-@media (max-width: 425px) {
-  .footer__inner {
-    display: flex;
-    flex-direction: column;
+  .bg-part-woman {
+    top: 117px;
+    width: 230px;
+    height: 350px;
   }
 }
+
+/*@media (max-width: 425px) {*/
+/*  .footer__inner {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*  }*/
+/*}*/
 
 @media (max-width: 400px) {
-  .hero {
-    background-color: rgb(255, 255, 255, .8);
-    padding: 10px;
-    position: relative;
-    border-radius: 18px;
-  }
+  /*.hero {*/
+  /*  background-color: rgb(255, 255, 255, .8);*/
+  /*  padding: 10px;*/
+  /*  position: relative;*/
+  /*  border-radius: 18px;*/
+  /*}*/
 
   .bg-part-woman {
     z-index: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-hero-wrapper {
+    min-height: 545px;
+    background-position: -230px 0;
+  }
+
+  .bg-part-woman {
+    top: 130px;
+    width: 200px;
+    height: 300px;
   }
 }
