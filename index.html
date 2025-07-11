@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Бюро кошторисів">
 
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -234,16 +235,16 @@
             <div class="col-12">
               <h2 class="main-title mb-4">Бажаєте прорахувати вартість робіт?</h2>
               <p class="contact-us__text">Залиште свої контакти — і ми підготуємо для вас кошторис або персональну консультацію.</p>
-              <form class="contact-us__form my-3">
+              <form class="contact-us__form my-3" id="form">
                 <div class="row">
                   <div class="col-12">
                     <div class="contact-us__telephone">
-                      <input type="text" class="form-control" placeholder="Телефон">
+                      <input name="telephone" type="number" class="form-control _req" placeholder="Телефон">
                     </div>
                   </div>
                   <div class="col-12 mt-3">
                     <div class="contact-us__name">
-                      <input type="text" class="form-control" placeholder="Ім’я">
+                      <input name="user-name" type="text" class="form-control _req" placeholder="Ім’я">
                     </div>
                   </div>
                   <div class="col-12 mt-3">
@@ -268,7 +269,7 @@
             </div>
             <div class="col-6 col-md-6 d-flex flex-column mt-3">
               <span class="footer__title">Контактна інформація:</span>
-              <span class="footer__text mt-3">вул. Сумська, буд. , офіс №, м. Харків, Україна</span>
+              <span class="footer__text">вул. Сумська, буд. , офіс №, м. Харків, Україна</span>
               <a href="#" class="footer__link mt-3">+38 (099) 316-69-78</a>
               <a href="#" class="footer__link mt-3">kalmukova27@ukr.net</a>
               <span class="footer__bluetext mt-3">Валентина Савчук</span>
