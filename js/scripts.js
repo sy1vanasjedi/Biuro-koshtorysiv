@@ -8,7 +8,7 @@ $(document).ready(function () {
     appendArrows: $('.our-team__info'),
     responsive: [
       {
-        breakpoint: 400,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
         }
