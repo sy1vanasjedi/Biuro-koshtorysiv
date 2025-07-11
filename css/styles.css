@@ -94,19 +94,6 @@ select {
   z-index: 1;
 }
 
-/*.mb-bg-part-woman {*/
-/*  position: absolute;*/
-/*  right: 0;*/
-/*  top: 5%;*/
-/*  width: 486px;*/
-/*  height: 729px;*/
-/*  background-image: url("../images/woman-mb-bg.png");*/
-/*  background-position: 0 0;*/
-/*  background-repeat: no-repeat;*/
-/*  background-size: cover;*/
-/*  z-index: 1;*/
-/*}*/
-
 .bg-part-black-yellow-line {
   position: absolute;
   bottom: 6%;
@@ -159,7 +146,6 @@ select {
 }
 
 .header__navbar {
-  /*position: relative;*/
   width: 100%;
   background-color: transparent;
 }
@@ -340,10 +326,6 @@ select {
   color: #000000;
 }
 
-.employee {
-  /*max-width: 212px;*/
-}
-
 .employee__name {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
@@ -367,7 +349,6 @@ select {
 }
 
 .employee__photo {
-  /*max-height: 484px;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,10 +368,6 @@ select {
   border: none;
   background-color: #ffd836;
 }
-
-/*.our-team__info .slick-next:hover {*/
-/*  background-color: #FFE898;*/
-/*}*/
 
 /*Contact us*/
 .contact-us-wrapper {
@@ -773,21 +750,7 @@ body._sending::after,
   }
 }
 
-/*@media (max-width: 425px) {*/
-/*  .footer__inner {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*  }*/
-/*}*/
-
 @media (max-width: 400px) {
-  /*.hero {*/
-  /*  background-color: rgb(255, 255, 255, .8);*/
-  /*  padding: 10px;*/
-  /*  position: relative;*/
-  /*  border-radius: 18px;*/
-  /*}*/
-
   .bg-part-woman {
     z-index: 0;
   }
