@@ -372,9 +372,9 @@ select {
   background-color: #ffd836;
 }
 
-.our-team__info .slick-next:hover {
-  background-color: #FFE898;
-}
+/*.our-team__info .slick-next:hover {*/
+/*  background-color: #FFE898;*/
+/*}*/
 
 /*Contact us*/
 .contact-us-wrapper {
@@ -567,6 +567,10 @@ select {
   .hero__title {
     font-size: 55px;
   }
+
+  .secondary-title {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -599,11 +603,24 @@ select {
   .bg-part-black-yellow-line {
     bottom: -8%;
   }
+
+  .our-team__slider .slick-track {
+    display: flex !important;
+    align-items: end !important;
+  }
+
+  .our-team__slider .slick-slide {
+    height: inherit !important;
+  }
 }
 
 @media (max-width: 575px) {
   .header-hero-wrapper {
     background-position: -155px 0;
+  }
+
+  .our-services__service-wrapper {
+    max-width: 100%;
   }
 }
 
