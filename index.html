@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Бюро кошторисів">
+  <meta name="description" content="Бюро кошторисів. Скласти кошторис. Складання, перевірка, супровід, реалізація кошторисної документації.">
 
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
   <!--Slider CSS-->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+  <!--Toastify CSS-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
   <!--Styles-->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-  <title>Бюро Кошторисів</title>
+  <title>Бюро Кошторисів | Скласти кошторис | Складання, перевірка, супровід, реалізація кошторисної документації</title>
+  <link rel="icon" href="images/favicon-bk.png" type="image/png">
 </head>
 <body>
   <div class="wrapper">
@@ -36,11 +40,11 @@
             <div class="menu flex-column flex-lg-row justify-content-between align-item-start align-item-lg-center ml-lg-3">
               <ul class="menu__list d-flex flex-column flex-lg-row">
                 <li class="menu__item mx-2 d-lg-none">
-                  <a class="menu__link menu__link-telephone" href="#">+38 (099) 316-69-78</a>
+                  <a class="menu__link menu__link-telephone" href="tel:+380993166978">+38 (099) 316-69-78</a>
                 </li>
                 <li class="menu__item d-flex mt-2 d-lg-none">
-                  <a class="menu__link menu__link-social" href="#"><img src="images/icons/telegram.svg" alt="social-icon"></a>
-                  <a class="menu__link menu__link-social" href="#"><img src="images/icons/viber.svg" alt="social-icon"></a>
+                  <a class="menu__link menu__link-social" href="https://t.me/+380993166978"><img src="images/icons/telegram.svg" alt="social-icon"></a>
+                  <a class="menu__link menu__link-social" href="viber://chat?number=%2B380993166978"><img src="images/icons/viber.svg" alt="social-icon"></a>
                 </li>
                 <li class="menu__item mx-2 mt-2 mt-lg-0">
                   <a class="menu__link" href="#about-us">Про компанію</a>
@@ -191,34 +195,26 @@
               <div class="our-team__slider">
                 <div class="our-team__slide">
                   <div class="employee d-flex flex-column px-2">
-                    <span class="employee__name">Оксана Машій</span>
+                    <span class="employee__name">Валентина Савчук</span>
                     <span class="employee__position">Головний кошторисник</span>
-                    <span class="employee__experience pb-3 mb-3">10 років досвіду</span>
+                    <span class="employee__experience pb-3 mb-3">13 років досвіду</span>
                     <img class="employee__photo" src="images/employees/employee1.png" alt="employee-photo">
                   </div>
                 </div>
                 <div class="our-team__slide">
                   <div class="employee d-flex flex-column px-2">
-                    <span class="employee__name">Ольга Грибів</span>
-                    <span class="employee__position">Інженер</span>
-                    <span class="employee__experience pb-3 mb-3">15 років досвіду</span>
-                    <img class="employee__photo" src="images/employees/employee2.png" alt="employee-photo">
-                  </div>
-                </div>
-                <div class="our-team__slide">
-                  <div class="employee d-flex flex-column px-2">
-                    <span class="employee__name">Катерина Колосенко</span>
-                    <span class="employee__position">Інженер</span>
-                    <span class="employee__experience pb-3 mb-3">7 років досвіду</span>
+                    <span class="employee__name">Віталій Лютий</span>
+                    <span class="employee__position">Головний інженер</span>
+                    <span class="employee__experience pb-3 mb-3">17 років досвіду</span>
                     <img class="employee__photo" src="images/employees/employee3.png" alt="employee-photo">
                   </div>
                 </div>
                 <div class="our-team__slide">
                   <div class="employee d-flex flex-column px-2">
-                    <span class="employee__name">Оксана Машій</span>
-                    <span class="employee__position">Головний кошторисник</span>
-                    <span class="employee__experience pb-3 mb-3">10 років досвіду</span>
-                    <img class="employee__photo" src="images/employees/employee1.png" alt="employee-photo">
+                    <span class="employee__name">Наталя Лата</span>
+                    <span class="employee__position">Кошторисник</span>
+                    <span class="employee__experience pb-3 mb-3">20 років досвіду</span>
+                    <img class="employee__photo" src="images/employees/employee2.png" alt="employee-photo">
                   </div>
                 </div>
               </div>
@@ -235,16 +231,16 @@
             <div class="col-12">
               <h2 class="main-title pb-1 mb-md-4">Бажаєте прорахувати вартість робіт?</h2>
               <p class="contact-us__text">Залиште свої контакти — і ми підготуємо для вас кошторис або персональну консультацію.</p>
-              <form class="contact-us__form my-3" id="form">
+              <form class="contact-us__form my-3 form-data" id="form" action="php/sendmail.php" method="post">
                 <div class="row">
                   <div class="col-12">
                     <div class="contact-us__telephone">
-                      <input name="telephone" type="number" class="form-control _req" placeholder="Телефон">
+                      <input name="phone" type="number" class="form-control" placeholder="Телефон" required>
                     </div>
                   </div>
                   <div class="col-12 mt-3">
                     <div class="contact-us__name">
-                      <input name="user-name" type="text" class="form-control _req" placeholder="Ім’я">
+                      <input name="name" type="text" class="form-control" placeholder="Ім’я" required>
                     </div>
                   </div>
                   <div class="col-12 mt-3">
@@ -269,9 +265,9 @@
             </div>
             <div class="col-6 col-md-6 d-flex flex-column mt-3">
               <span class="footer__title">Контактна інформація:</span>
-              <span class="footer__text">вул. Сумська, буд. , офіс №, м. Харків, Україна</span>
-              <a href="#" class="footer__link mt-2">+38 (099) 316-69-78</a>
-              <a href="#" class="footer__link mt-2">kalmukova27@ukr.net</a>
+              <span class="footer__text">М.Харків. вул. Сумська, буд. 67. Офіс 3, Україна</span>
+              <a href="tel:+380993166978" class="footer__link mt-2">+38 (099) 316-69-78</a>
+              <a href="mailto:kalmukova27@ukr.net" class="footer__link mt-2">kalmukova27@ukr.net</a>
               <span class="footer__bluetext mt-2">Валентина Савчук</span>
             </div>
             <div class="col-6 col-md-6 d-flex mt-3">
@@ -295,7 +291,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
   <!--Slider JS-->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!--Toastify CSS-->
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
   <!--Scripts-->
   <script src="js/scripts.js"></script>
